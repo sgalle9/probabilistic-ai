@@ -41,5 +41,5 @@ This task utilizes Bayesian Optimization to identify optimal structural features
 This task employs the Soft Actor-Critic ([SAC](https://doi.org/10.48550/arXiv.1801.01290)) algorithm, an off-policy reinforcement learning method, to develop a strategy for swinging up an inverted pendulum from a downward position (π) to an upright position (0) and maintaining it there. SAC optimizes a stochastic policy to maximize reward while encouraging entropy in action selection, which helps balance exploration and exploitation. To control the pendulum, the agent uses a motor that can apply torques ranging from -1 to 1.
 
 <div align="center">
-<video width="320" height="240" controls src="assets/pendulum_episode.mp4" title="Task 4"></video>
+<img width="320" height="240" controls src="assets/pendulum_episode.gif" title="Task 4 Pendulum"></img>
 </div>
