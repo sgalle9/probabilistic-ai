@@ -166,6 +166,8 @@ class BO_algo():
 
 
         fig, axes = plt.subplots(ncols=2, nrows=1)
+        legend_fontsize = 8
+        legend_alpha = 0.5
 
         axes[0].plot(xs, f_vals, 'k--', label="True Function")
         axes[0].plot(xs, f_pred, '-', color="tab:blue", lw=2, label="Objective Posterior")
@@ -177,7 +179,7 @@ class BO_algo():
             label="Confidence Interval"
         )
         axes[0].plot(np.array(self.X).flatten(), self.f, '.', markersize=15, color="tab:orange", label="Data")
-        axes[0].legend(loc="upper left")
+        axes[0].legend(loc="lower right", fontsize=legend_fontsize, framealpha=legend_alpha)
         axes[0].title.set_text("Objective Function")
 
 
@@ -191,8 +193,8 @@ class BO_algo():
             label="Confidence Interval"
         )
         axes[1].plot(np.array(self.X).flatten(), self.v, '.', markersize=15, color="tab:orange", label="Data")
-        axes[1].legend(loc="upper left")
-        axes[1].title.set_text("Objective Function")
+        axes[1].legend(loc="upper left", fontsize=legend_fontsize, framealpha=legend_alpha)
+        axes[1].title.set_text("Constraint Function")
 
         plt.savefig('obj_and_const_functions.png')
 

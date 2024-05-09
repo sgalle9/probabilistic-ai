@@ -4,7 +4,7 @@
 
 Projects from the '263-5210-00L  Probabilistic Artificial Intelligence' course by Prof. Krause.
 
-**Disclaimer:** Task 1 and 2 utilize a private dataset that will not be released.
+**Disclaimer:** Task 1 and 2 utilize private datasets that will not be released.
 
 ## Projects
 
